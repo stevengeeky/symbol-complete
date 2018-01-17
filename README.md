@@ -1,8 +1,12 @@
 # Symbol Complete
 
-This is a very simple extension which converts a given set of patterns into a user-specified list of symbols.
+This is a very simple VSCode extension which converts a given set of patterns into a user-specified list of symbols.
 
 ![symbol-complete](https://raw.githubusercontent.com/stevengeeky/symbol-complete/master/symbol-complete.gif)
+
+## Usage
+
+After installation do `Ctrl+Shift+P` or `Cmd+Shift+P` and type 'Symbol Complete'
 
 ## Extension Settings
 
@@ -22,7 +26,7 @@ No currently known issues.
 
 ## Release Notes
 
-### 0.0.2 to 0.0.4
+### 0.0.2 to 0.0.5
 
 Minor revisions
 
