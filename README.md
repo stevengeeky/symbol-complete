@@ -2,6 +2,8 @@
 
 This is a very simple extension which converts a given set of patterns into a user-specified list of symbols.
 
+![symbol-complete](https://raw.githubusercontent.com/stevengeeky/symbol-complete/master/symbol-complete.gif)
+
 ## Extension Settings
 
 ```json
@@ -20,7 +22,7 @@ No currently known issues.
 
 ## Release Notes
 
-### 0.0.2
+### 0.0.2, 0.0.3
 
 Minor revisions
 

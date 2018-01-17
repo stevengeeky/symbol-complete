@@ -2,7 +2,7 @@
     "name": "symbol-complete",
     "displayName": "symbol-complete",
     "description": "Auto-replace a list of customizable patterns with specified symbols",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "publisher": "sporiley",
     "engines": {
         "vscode": "^1.19.0"
