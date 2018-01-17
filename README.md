@@ -26,7 +26,11 @@ No currently known issues.
 
 ## Release Notes
 
-### 0.0.2 to 0.0.5
+### 0.0.6 — 0.0.8
+
+Minor undo issue fixed
+
+### 0.0.2 — 0.0.5
 
 Minor revisions
 

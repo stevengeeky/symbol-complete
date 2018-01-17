@@ -42,7 +42,7 @@ function update(replacements) {
                         just_replaced = true;
                     }).then(function() {
                         if (!editor.selection.isEmpty) {
-                            editor.selection = new vscode.Selection(selection.start.line, selection.start.character, selection.start.line, selection.start.character);
+                            editor.selection = new vscode.Selection(editor.selection.end.line, editor.selection.end.character, editor.selection.end.line, editor.selection.end.character);
                         }
                     });
                     break;
