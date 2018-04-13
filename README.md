@@ -1,30 +1,40 @@
 # Symbol Complete
 
-This is a very simple VSCode extension which converts a given set of patterns into a user-specified list of symbols.
+This is a very simple VSCode extension which converts a given set of (regular expression) patterns into a user-specified list of symbols.
 
 ![symbol-complete](https://raw.githubusercontent.com/stevengeeky/symbol-complete/master/symbol-complete.gif)
 
 ## Usage
 
-After installation do `Ctrl+Shift+P` or `Cmd+Shift+P` and type 'Symbol Complete'
+Install this extension by searching 'Symbol Complete' in VSCode extensions.
+Open up a new file and type something like `|-->|` and it should convert to `⟶` automatically.
 
 ## Extension Settings
 
 ```json
 {
     "symbol-complete.replacements": {
-        "\\|lambda\\|": "λ"
+        "\\|lambda\\|": "λ",
+        "\\.\\.\\.": "..."
     }
 }
 ```
 
-By default replacements for all Greek symbols are added.
+Replacements for all Greek symbols are added.\
+As of 0.0.9 support for lots of set theory operators are added as well. See `package.json` for the full list of default replacements.
+
+This extension also works with multiple selections.
 
 ## Known Issues
 
-No currently known issues.
+Minor undo problems
 
 ## Release Notes
+
+### 0.0.9
+
+Support for multiple selections.\
+Added more character conversions.
 
 ### 0.0.6 — 0.0.8
 

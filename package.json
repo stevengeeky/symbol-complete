@@ -1,8 +1,8 @@
 {
     "name": "symbol-complete",
     "displayName": "Symbol Complete",
-    "description": "Auto-replace a list of customizable patterns with specified symbols",
-    "version": "0.0.8",
+    "description": "Autoreplace a list of customizable patterns with specified symbols",
+    "version": "0.1.0",
     "publisher": "sporiley",
     "engines": {
         "vscode": "^1.19.0"
@@ -11,15 +11,14 @@
         "Other"
     ],
     "activationEvents": [
-        "onCommand:extension.symbolComplete"
+        "*"
     ],
+    "repository": {
+        "type": "github",
+        "url": "https://github.com/stevengeeky/symbol-complete"
+    },
     "main": "./extension",
     "contributes": {
-        "commands": [{
-                "command": "extension.symbolComplete",
-                "title": "Symbol Complete"
-            }
-        ],
         "configuration": {
             "type": "object",
             "title": "Symbol Complete Configuration",
@@ -75,7 +74,70 @@
                         "\\|psi\\|": "ψ",
                         "\\|Psi\\|": "Ψ",
                         "\\|omega\\|": "ω",
-                        "\\|Omega\\|": "Ω"
+                        "\\|Omega\\|": "Ω",
+                        "\\|\\-\\-\\|": "–",
+                        "\\|\\-\\-\\-\\|": "—",
+                        "\\|forall\\|": "∀",
+                        "\\|and\\|": "∧",
+                        "\\|or\\|": "∨",
+                        "\\|implies\\|": "⇔",
+                        "\\|bottom\\|": "⊥",
+                        "\\|not\\|": "¬",
+                        "\\|union\\|": "∪",
+                        "\\|intersect\\|": "∩",
+                        "\\|subset\\|": "⊆",
+                        "\\|ssubset\\|": "⊂",
+                        "\\|superset\\|": "⊇",
+                        "\\|ssuperset\\|": "⊃",
+                        "\\|nsubset\\|": "⊄",
+                        "\\|nsuperset\\|": "⊅",
+                        "\\|element\\|": "∈",
+                        "\\|nelement\\|": "∉",
+                        "\\|X\\|": "×",
+                        "\\|approx\\|": "≈",
+                        "\\|approx2\\|": "~",
+                        "\\|\\=\\=\\=\\|": "≡",
+                        "\\|infinity\\|": "∞",
+                        "\\|proportional\\|": "∝",
+                        "\\|<<\\|": "≪",
+                        "\\|floorl\\|": "⌊",
+                        "\\|floorr\\|": "⌋",
+                        "\\|ceill\\|": "⌈",
+                        "\\|ceilr\\|": "⌉",
+                        "\\|compose\\|": "∘",
+                        "\\|ox\\|": "⊗",
+                        "\\|o\\+\\|": "⊕",
+                        "\\|\\=\\=\\>\\|": "⇒",
+                        "\\|\\<\\=\\|": "≤",
+                        "\\|\\>\\=\\|": "≥",
+                        "\\|\\<\\=\\=\\|": "⇐",
+                        "\\|\\-\\>\\|": "→",
+                        "\\|\\-\\-\\>\\|": "⟶",
+                        "\\|\\<\\-\\|": "←",
+                        "\\|\\<\\-\\-\\|": "⟵",
+                        "\\|\\<\\=\\=\\>\\|": "⇔",
+                        "\\|\\<\\-\\>\\|": "↔",
+                        "\\|(exist|in)\\|": "∃",
+                        "\\|nexist\\|": "∄",
+                        "\\|therefore\\|": "∴",
+                        "\\|\\:\\:\\|": "∷",
+                        "\\|\\.\\.\\.\\|": "…",
+                        "\\|\\|\\-\\|": "⊢",
+                        "\\|\\|\\-\\>\\|": "↦",
+                        "\\|union\\+\\|": "⊎",
+                        "\\|\\/\\=\\|": "≠",
+                        "\\|\\~\\=\\=\\|": "≅",
+                        "\\|partial|": "∂",
+                        "\\|Complex|": "ℂ",
+                        "\\|Natural\\|": "ℕ",
+                        "\\|Rational\\|": "ℚ",
+                        "\\|Real\\|": "ℝ",
+                        "\\|Universal\\|": "𝕌",
+                        "\\|Integer\\|": "ℤ",
+                        "\\|Aleph\\|": "ℵ",
+                        "\\|gradient\\|": "∇",
+                        "\\|\\+\\-\\|": "±",
+                        "\\|\\-\\+\\|": "∓"
                     }
                 }
             }
