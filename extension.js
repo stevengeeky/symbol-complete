@@ -45,11 +45,15 @@ function update() {
                 let pattern = k;
                 if (!pattern.endsWith('$')) pattern += '$';
                 let reg = new RegExp(pattern);
+                
                 if (reg.test(line_to_cursor)) {
-                    let value = line_to_cursor.substring(line_to_cursor.match(reg).index);
+                    let value = line_to_cursor
+                            .substring(line_to_cursor
+                                .lastIndexOf(line_to_cursor
+                                    .match(reg)[0]));
+                    
                     if (value.length > 0) {
                         changes.push([index, value, selection.end.line, selection.end.character, replacements[k]]);
-                        num_changes++;
                     }
                 }
             }
@@ -65,7 +69,6 @@ function update() {
                     let i = 0;
                     changes.forEach(change => {
                         let jr = just_replaced[+change[0]];
-                        console.log(JSON.stringify(jr), JSON.stringify([change[2], change[3]]));
                         
                         just_replaced[+change[0]] = [change[2], change[3]];
                         if (jr && jr[0] == change[2] && jr[1] == change[3]) return (just_replaced[+change[0]] = undefined);
